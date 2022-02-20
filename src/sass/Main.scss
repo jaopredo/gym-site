@@ -5,6 +5,10 @@
     src: url("../fonts/Cocogoose.ttf");
 }
 
+@mixin titles-font-size {
+    font-size: 2.5rem;
+}
+
 main#corpo {
     // background-color: yellow;
     grid-area: m;
@@ -75,8 +79,8 @@ article#intro {
 img.muscle-man {
     position: absolute;
     bottom: 0px;
-    height: 90%;
-    margin-left: 5px;
+    left: 5%;
+    height: 85%;
 
     // animation: ;
 }
@@ -85,7 +89,7 @@ img.muscle-man {
 
 // Incentivo
 article#incentivo {
-    height: 100vh;
+    min-height: 110vh;
     position: relative;
     
     .text-container {
@@ -96,16 +100,16 @@ article#incentivo {
         position: absolute;
         
         left: 20%;
-        top: 10%;
+        top: 8%;
 
         width: 350px;
         
         h2 {
+            @include titles-font-size;
             display: block;
             font-family: 'cocogoose';
 
             width: 150%;
-            font-size: 3rem;
             margin-left: -44%;
             letter-spacing: 3px;
         }
@@ -121,9 +125,8 @@ article#incentivo {
 
 .push-up-girl {
     display: block;
-    margin-top: 33vh;
     position: absolute;
-    right: -10px;
+    right: 0;
     width: 55%;
     bottom: 0;
 }
@@ -136,17 +139,18 @@ article#staff {
     color: white;
 
     h2 {
-        font-size: 3rem;
+        @include titles-font-size;
         font-family: 'cocogoose';
     }
     .text-container {
-        padding: 100px 70px;
+        padding: 50px 70px;
         
         p {
-            margin-top: 40px;
-            font-size: 0.8rem;
+            margin-top: 30px;
+            font-size: 0.6rem;
             font-family: cursive;
             line-height: 1.5;
+            width: 70%;
         }
     }
     menu {
@@ -205,7 +209,6 @@ article#staff {
 
 // Prices
 article#prices {
-    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,11 +216,10 @@ article#prices {
 
 #price-container {
     width: 80%;
-    margin-top: 20%;
 
     h2 {
+        @include titles-font-size;
         font-family: 'cocogoose';
-        font-size: 3rem;
         margin: 50px 0;
     }
 }
@@ -239,6 +241,7 @@ article#prices {
         width: 25%;
         border: 4px solid $container-color;
         height: 100%;
+        cursor: pointer;
         
         display: flex;
         flex-flow: column nowrap;

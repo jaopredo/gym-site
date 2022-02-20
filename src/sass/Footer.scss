@@ -1,4 +1,78 @@
+@import "colors.scss";
+
 footer#rodape {
     // background-color: blue;
     grid-area: f;
+    position: relative;
+
+    background-image: url("../images/location.png");
+    background-size: auto 100%;
+
+    height: 70vh;
+    z-index: -2;
+}
+
+.footer-infos {
+    display: block;
+
+    position: absolute;
+    width: fit-content;
+
+    top: 10%;
+    right: 20%;
+
+    background-color: white;
+    padding: 20px;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        border: 4px solid $generic-orange;
+        transform: translate(40px, -10px);
+    }
+}
+
+.location {
+    width: 100%;
+    vertical-align: middle;
+}
+
+tr {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    font-size: 0.67rem;
+}
+
+td {
+    width: 70%;
+
+    a  {
+        color: $titles-color;
+        margin-right: 10px;
+        font-size: 1.05rem;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $generic-orange;
+        }
+    }
+}
+
+td.first {
+    font-family: 'cocogoose';
+    vertical-align: top;
+    width: 30%;
+}
+
+tbody {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 15px;
 }
