@@ -57,17 +57,19 @@ function Main() {
                 </menu>
             </Article>
             <Article id='prices'>
-                <h2>NOSSOS PREÇOS</h2>
-                <menu>
-                    {React.Children.toArray(
-                        PricesInfos.map((price) => (
-                            <Price number={price.number} time={price.time} price={price.price}>
-                                {price.children}
-                            </Price>
-                        ))
-                    )}
-                </menu>
-                <h2>SINTA-SE EM CASA!</h2>
+                <div id='price-container'>
+                    <h2>OUR PRICES</h2>
+                    <menu className='price-list'>
+                        {React.Children.toArray(
+                            PricesInfos.map((price) => (
+                                <Price number={price.number} time={price.time} price={price.price}>
+                                    {price.children}
+                                </Price>
+                            ))
+                        )}
+                    </menu>
+                    <h2>WELCOME TO JOIN!</h2>
+                </div>
             </Article>
         </main>
     );

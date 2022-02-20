@@ -7,13 +7,13 @@ const PricesInfos = [
     },
     {
         number: 3,
-        time: 'MÊS',
+        time: 'MÊSES',
         price: 150,
         children: 'Lorem, ipsum sit amet consectetur adipisicing elit. Quos nesciunt expedita cupiditate eos tenetur nihil?'
     },
     {
         number: 6,
-        time: 'MÊS',
+        time: 'MÊSES',
         price: 290,
         children: 'Lorem, ipsum sit amet consectetur adipisicing elit. Quos nesciunt expedita cupiditate eos tenetur nihil?'
     },

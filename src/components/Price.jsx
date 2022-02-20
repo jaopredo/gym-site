@@ -10,7 +10,7 @@ function Price({ number, time, price, children }) {
             </span>
             {time}
             <p>{children}</p>
-            <span>
+            <span className='text-price'>
                 R&#36;{price}
             </span>
             <a href="#">COMPRAR</a>
