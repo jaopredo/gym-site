@@ -3,12 +3,12 @@ import React from 'react';
 
 function Nav() {
     return (
-        <nav>
-            <ul>
-                <li><a href="#">SOBRE</a></li>
-                <li><a href="#">TREINADORES</a></li>
-                <li><a href="#">PREÇOS</a></li>
-                <li><a href="#">CONTATO</a></li>
+        <nav className='nav-area'>
+            <ul className='principal-menu'>
+                <li><a href="#intro">ABOUT</a></li>
+                <li><a href="#staff">STAFF</a></li>
+                <li><a href="#prices">PRICES</a></li>
+                <li><a href="#rodape">CONTACT</a></li>
             </ul>
         </nav>
     );

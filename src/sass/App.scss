@@ -1,0 +1,22 @@
+@import "colors.scss";
+
+#root {
+    display: grid;
+
+    color: $titles-color;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 15vh auto 15vh;
+    grid-template-areas:
+        "h"
+        "m"
+        "f";
+}
+
+a {
+    color: $generic-orange;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: underline;
+}
