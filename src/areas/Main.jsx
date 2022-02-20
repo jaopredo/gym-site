@@ -42,10 +42,12 @@ function Main() {
                 <img className='push-up-girl' src={GirlPushUP} alt="Mulher Flexão" />
             </Article>
             <Article id="staff">
-                <h2>ESTAMOS AQUI PARA TE ENSINAR</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum recusandae cum quam consequuntur enim quo ad adipisci mollitia quaerat ullam, ea quis nihil dolore dolorum doloremque.
-                </p>
+                <div className='text-container'>
+                    <h2>WE ARE HERE TO GUIDE YOU</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum recusandae cum quam consequuntur enim quo ad adipisci mollitia quaerat ullam, ea quis nihil dolore dolorum doloremque.
+                    </p>
+                </div>
                 <menu>
                     {React.Children.toArray(
                         TraineersInfos.map((Personal) => (

@@ -6,7 +6,7 @@ function Traineer({ src, name, desc }) {
     return (
         <li>
             <figure>
-                <img src={src} alt={name} />
+                <img className='traineer-image' src={src} alt={name} />
                 <figcaption>
                     <h3>{name}</h3>
                     <p>{desc}</p>
