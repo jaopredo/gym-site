@@ -12,6 +12,10 @@ import Article from '../components/Article';
 import Traineer from '../components/Traineer';
 import Price from '../components/Price';
 
+import IncentivoTextBlock from '../components/IncentivoTextBlock';
+import StaffTextBlock from '../components/StaffTextBlock';
+import PricesContainer from '../components/PricesContainer';
+
 /* CONTROLLERS */
 import TraineersInfos from '../controllers/TraineersInfos';
 import PricesInfos from '../controllers/PricesInfos';
@@ -32,34 +36,23 @@ function Main() {
                 <img className='muscle-man' src={MuscleMan} alt="Homem Musculoso" />
             </Article>
             <Article id="incentivo">
-                <div className='text-container'>
-                    <h2>YOUR BODY IS<br/>A WORK OF ART</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe temporibus cum veniam tempore sint consequatur animi deleniti delectus! Vitae eligendi, est eveniet aliquid asperiores labore optio natus. Mollitia, consequuntur id.
-                    </p>
-                    <a href="#">LER MAIS</a>
-                </div>
+                <IncentivoTextBlock />
                 <img className='push-up-girl' src={GirlPushUP} alt="Mulher Flexão" />
             </Article>
             <Article id="staff">
-                <div className='text-container'>
-                    <h2>WE ARE HERE TO GUIDE YOU</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum recusandae cum quam consequuntur enim quo ad adipisci mollitia quaerat ullam, ea quis nihil dolore dolorum doloremque.
-                    </p>
-                </div>
-                <menu>
+                <StaffTextBlock />
+                <ul>
                     {React.Children.toArray(
                         TraineersInfos.map((Personal) => (
                             <Traineer src={Personal.src} name={Personal.name} desc={Personal.desc} />
                         ))
                     )}
-                </menu>
+                </ul>
             </Article>
             <Article id='prices'>
-                <div id='price-container'>
+                <article id='price-container'>
                     <h2>OUR PRICES</h2>
-                    <menu className='price-list'>
+                    <PricesContainer>
                         {React.Children.toArray(
                             PricesInfos.map((price) => (
                                 <Price number={price.number} time={price.time} price={price.price}>
@@ -67,9 +60,9 @@ function Main() {
                                 </Price>
                             ))
                         )}
-                    </menu>
+                    </PricesContainer>
                     <h2>WELCOME TO JOIN!</h2>
-                </div>
+                </article>
             </Article>
         </main>
     );
