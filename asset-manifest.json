@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/gym-site/static/css/main.536b3d0a.css",
+    "main.js": "/gym-site/static/js/main.5fee4844.js",
+    "static/media/Kate.png": "/gym-site/static/media/Kate.c14043844d949deda33d.png",
+    "static/media/Gordon.png": "/gym-site/static/media/Gordon.a38abfc759a65bdb88da.png",
+    "static/media/Joshua.png": "/gym-site/static/media/Joshua.11ad27457b4df3775bc3.png",
+    "static/media/Paulo.png": "/gym-site/static/media/Paulo.78188419000f6d6083bf.png",
+    "static/media/Albert.png": "/gym-site/static/media/Albert.f042ad9829d7e6aca9d7.png",
+    "static/media/pushup-girl.png": "/gym-site/static/media/pushup-girl.535eefeac1beadcbb18c.png",
+    "static/media/Cocogoose.ttf": "/gym-site/static/media/Cocogoose.fc4c5187ea318bde306b.ttf",
+    "static/media/logo.png": "/gym-site/static/media/logo.5df20fee16d66bf4420b.png",
+    "static/media/homem-musculoso.png": "/gym-site/static/media/homem-musculoso.2d50e5b52d25d11675fc.png",
+    "static/media/location.png": "/gym-site/static/media/location.15e82107a9dbbcf167eb.png",
+    "index.html": "/gym-site/index.html",
+    "main.536b3d0a.css.map": "/gym-site/static/css/main.536b3d0a.css.map",
+    "main.5fee4844.js.map": "/gym-site/static/js/main.5fee4844.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.536b3d0a.css",
+    "static/js/main.5fee4844.js"
+  ]
+}
